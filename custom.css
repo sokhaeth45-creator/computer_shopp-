@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Koulen";
+  src: url("../fonts/Koulen/Koulen-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Battambang";
+  src: url("../fonts/Battambang/Battambang-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSenBold";
+  src: url("../fonts/Open_Sans/static/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSenRegular";
+  src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+
+body {
+  font-family: "Battambang", "OpenSanRegular";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link {
+  font-family: "Koulen", "OpenSanBold";
+  color: aquamarine;
+}
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+.nav-link:hover {
+  color: blueviolet;
+  scale: 1.1;
+  transition: 1s;
+}
+
+/* Footer */
+.footer {
+  background: #17212b;
+  color: #ffffff;
+  padding: 45px 5% 0;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: auto;
+  padding-bottom: 35px;
+}
+
+.footer-box h2 {
+  color: #65e6c4;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-box h3 {
+  color: #65e6c4;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-box p {
+  color: #d1d5db;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 5px 0;
+}
+
+.footer-box a {
+  display: block;
+  color: #d1d5db;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-box a:hover {
+  color: #65e6c4;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.footer-bottom p {
+  color: #9ca3af;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Responsive សម្រាប់ទូរស័ព្ទ */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 30px 20px 0;
+  }
+}
+
+.computer-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+}
+
+.computer-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.computer-name {
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.computer-name h3 {
+    color: #72e6cb;
+    font-size: 22px;
+    margin: 0;
+}
